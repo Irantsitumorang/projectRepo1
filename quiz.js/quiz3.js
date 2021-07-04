@@ -1,0 +1,4 @@
+function sayHalo(coba) {
+	return "Halo " +coba
+}
+console.log(sayHalo(4795))
