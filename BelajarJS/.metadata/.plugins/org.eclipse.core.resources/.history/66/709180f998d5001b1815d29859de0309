@@ -1,0 +1,11 @@
+function awesomeFunction(){
+var a = 2;
+
+var multiplyBy2 = function(){
+console.log(a*2);
+}
+}
+
+console.log(a);
+
+multiplyBy2();

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Validasi </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="lead"> Buat Akun Baru </h1>
+        <p class="small"> For international applicants, pleas contact our International Office regarding application procedure. This resgistration is meant for Indonesian citizen only <br> Harap menggunakan akun lama Anda jika Anda telah membuat pendaftaran sebelumnya
+        </p>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <form>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1"> Username </label>
+                <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
+                <small class="form-text text-muted"> Username
+                        yang Anda inginkan (hanya dapat terdiri dari huruf,
+                        angka, dan _). Username tidak boleh mengandung spasi.
+                    </small>
+            </div>
+
+            <div class="form-group">
+                <label"> Password </label>
+                <input type="password" class="form-control" >
+                <small class="form-text text-muted" id="password"> Masukkan
+                        password. Minimal terdiri dari karakter dan case
+                        sensitive ( A beda dengan a). </small>
+            </div>
+
+            <div class="form-group">
+                <label> Ulangi Password </label>
+                <input type="email" class="form-control" id="ulangi" >
+            </div>
+
+            <div class="form-group">
+                <label> Nama Sesuai Identitas </label>
+                <input type="email" class="form-control" id="identitas" >
+                <p class="small"> Nama sesuai yang tertulis di kartu identitas, tanpa gelar akademis/sertifikasi. <br> Nama diawali huruf besar di awal dan setelah spasi. Abc Def, Contoh salah: abc, def, ABC, DEF. </p>
+            </div>
+
+            <div class="form-group">
+                <label> Nama Sesuai Ijazah </label>
+                <input type="text" class="form-control" id="ijazah" >
+                <p class="small"> Nama sesuai yang tertulis di kartu identitas, tanpa gelar akademis/sertifikasi. <br> Nama diawali huruf besar di awal dan setelah spasi. Abc Def, Contoh salah: abc, def, ABC, DEF. </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group" id="ji">
+                        <label> Jenis identitas </label>
+                        <Select class="form-control">
+                                <option> Pilih Identitas </option>
+                                <option> KTP </option>
+                                <option> SIM </option>
+                                <option> Passpord </option>
+                                <option> Lainnya </option>
+                            </select>
+                    </div>
+                    <p class="small"> Pilih jenis identitas Anda. Identitas harus dibawa ketika ujian/daftar ulang. </p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label> Nomor Identitas </label>
+                <input type="email" class="form-control" id="noidentitas" >
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group" id="negara">
+                        <label> Kewarganegaraan </label>
+                        <Select class="form-control">
+                                <option> Pilih Negara </option>
+                                <option> Republik Indonesia </option>
+                                <option> Wakanda </option>
+                                <option> Wkwk Land </option>
+                                <option> Lainnya </option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button> <br>
+        </form>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    // elemen input
+    var Username = document.getElementById("Username");
+    var Password = document.getElementById("Password");
+    var usia = document.getElementById("usia");
+    var gelar = document.getElementById("gelar");
+
+    // red text
+    var vNama = document.getElementById("vNama");
+    var vAlamat = document.getElementById("vAlamat");
+    var vUsia = document.getElementById("vUsia");
+    var vGelar = document.getElementById("vGelar");
+
+    // condition
+    function validasi() {
+        if (nama.value == "") {
+            vNama.style.display = "block";
+        } else {
+            vNama.style.display = "none";
+        }
+
+        if (alamat.value == "") {
+            vAlamat.style.display = "block";
+        } else {
+            vAlamat.style.display = "none";
+        }
+
+        if (usia.value == "") {
+            vUsia.style.display = "block";
+        } else {
+            vUsia.style.display = "none";
+        }
+
+        if (gelar.value == "") {
+            vGelar.style.display = "block";
+        } else {
+            vGelar.style.display = "none";
+        }
+    }
+</script>
+
+</html>

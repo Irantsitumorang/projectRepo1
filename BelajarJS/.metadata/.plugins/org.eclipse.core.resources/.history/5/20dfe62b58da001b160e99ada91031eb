@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    
+    <style>
+  
+	#bg{
+	margin-left: 54%;
+	border-left: 20px;
+	border-right: 20px;
+	}
+	
+    #surat1 {
+    width: 0;
+    height: 0;
+    
+    border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 70px solid red;
+    }
+    
+    #surat2 {
+    width: 0;
+    height: 0;
+    
+    border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 70px solid red;
+    }
+    
+     #surat3 {
+    width: 0;
+    height: 0;
+    
+    border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 70px solid red;
+    }
+   
+   #kumpulan {
+	margin-left: 50%;
+   } 
+    
+</style>
+    
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#surat1").fadeIn(4000);
+    $("#surat2").fadeIn(7000);
+    $("#surat3").fadeIn(9000);
+  });
+});
+
+</script>
+</head>
+<body>
+
+<button id="bg">Animasi Surat</button><br><br>
+
+<div id="kumpulan">
+<div id="surat1" style="display:none; background-color:yellow;"></div><br>
+<div id="surat2" style="display:none; background-color:orange;"></div><br>
+<div id="surat3" style="display:none; background-color:blue;"></div>
+</div>
+
+</body>
+</html>

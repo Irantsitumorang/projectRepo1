@@ -1,0 +1,17 @@
+for (var i b)
+	console.log(b[a]);
+	
+	function foo1()
+	{
+	return {
+	salam: "Hai"
+	};
+	}
+	
+	function foo2()
+	{
+	return
+	{
+	salam: "Hai"
+	};
+	}

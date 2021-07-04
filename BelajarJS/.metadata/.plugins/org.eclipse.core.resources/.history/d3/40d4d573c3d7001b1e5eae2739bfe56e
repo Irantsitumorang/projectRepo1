@@ -1,0 +1,11 @@
+for (var a in b)
+	console.log(b[a]);
+	
+	function foo1()
+	{
+	return {
+	salam: "Hai"
+	};
+	}
+	
+	console.log(foo1);
