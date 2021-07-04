@@ -1,1 +1,0 @@
-document.write("Belajar Javascript Menghubungkan File Eksternal");
