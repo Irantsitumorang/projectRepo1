@@ -1,7 +1,0 @@
-const person = {
-	name: 'Sumagusta',
-	pet: {
-		name: 'Suma'
-		}
-		};
-		

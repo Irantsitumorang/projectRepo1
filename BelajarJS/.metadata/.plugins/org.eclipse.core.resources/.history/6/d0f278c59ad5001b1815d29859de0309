@@ -1,8 +1,0 @@
-const person = {
-	name: 'Sumagusta',
-	pet: {
-		name: 'Suma'
-		}
-		};
-		
-	console.log(pet)
