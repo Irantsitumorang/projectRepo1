@@ -1,4 +1,0 @@
-var i = 0;
-do {
-	console.log(i+" kuda");
-} while (i++ < 5);
